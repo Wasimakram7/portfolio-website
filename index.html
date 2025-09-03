@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wasim Akram - DevOps Engineer Portfolio</title>
+    <meta name="description" content="DevOps Engineer specializing in cloud infrastructure, CI/CD, and automation. Experience with AWS, Docker, Kubernetes, and more.">
+    <meta name="keywords" content="DevOps, Cloud Engineer, AWS, Docker, Kubernetes, CI/CD, Infrastructure">
+    <meta property="og:title" content="Wasim Akram - DevOps Engineer Portfolio">
+    <meta property="og:description" content="DevOps Engineer specializing in cloud infrastructure, CI/CD, and automation">
+    <meta name="twitter:title" content="Wasim Akram - DevOps Engineer Portfolio">
+    <meta name="twitter:description" content="DevOps Engineer specializing in cloud infrastructure, CI/CD, and automation">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #f8fafc;
+            --accent-color: #10b981;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    }
+
+    @layer base {
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 bg-[var(--primary-color)] text-white rounded-lg font-medium hover:bg-blue-700 transition-all duration-200 transform hover:scale-105;
+        }
+        
+        .btn-secondary {
+            @apply px-6 py-3 border-2 border-[var(--primary-color)] text-[var(--primary-color)] rounded-lg font-medium hover:bg-[var(--primary-color)] hover:text-white transition-all duration-200;
+        }
+        
+        .card {
+            @apply bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .section-title {
+            @apply text-3xl font-bold text-[var(--text-primary)] mb-4;
+        }
+        
+        .skill-badge {
+            @apply px-4 py-2 bg-[var(--secondary-color)] text-[var(--primary-color)] rounded-full text-sm font-medium border border-blue-200 hover:bg-[var(--primary-color)] hover:text-white transition-all duration-200;
+        }
+    }
+
+    @layer utilities {
+        .text-gradient {
+            @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/Skills.js"></script>
+    <script type="text/babel" src="components/Experience.js"></script>
+    <script type="text/babel" src="components/Projects.js"></script>
+    <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
