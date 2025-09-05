@@ -12,8 +12,8 @@ function Hero() {
           <div className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="mb-8">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
-                alt="Alex Johnson"
+                src="https://images.stockcake.com/public/0/e/f/0efe4dee-4db8-473f-971b-82b4ba376f9a_large/classic-animated-character-stockcake.jpg"
+                alt="Wasim Akram"
                 className="w-32 h-32 rounded-full mx-auto mb-6 object-cover shadow-xl"
               />
               
